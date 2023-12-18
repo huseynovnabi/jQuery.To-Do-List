@@ -1,0 +1,49 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: orange;
+}
+a:hover {
+  color: black;
+}
+
+#todo {
+  padding: 60px 0;
+}
+#todo .box {
+  width: 300px;
+  padding: 22px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(235, 187, 45) 100%);
+}
+#todo .box h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+#todo .inputBox {
+  margin: 30px 0;
+}
+#todo .inputBox input {
+  padding: 15px;
+  border-radius: 20px;
+}
+#todo .btn button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+#todo .list {
+  padding: 30px 0;
+}
+#todo .list h2 {
+  width: 150px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #1f4cc7;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
