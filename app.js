@@ -1,12 +1,12 @@
 "use strict";
 $(document).ready(function () {
     $("button").click(() => {
-        // inputun dəyərin al
+        // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
         let inputValue = $("input").val().trim();
-        // numeric dəyərə çevir
+        // inputun dəyərin numeric dəyərə çevir
         let numericValue = Number(inputValue);
 
-        // burda bir addNumericTodos() methodunun içərisində for var və orda deyir ki, inputa daxil edilən rəqəmi sən rəqəmin özü qədər təkrarlayaraq rəqəmin özünü yazdır
+        // burda bir addNumericTodos() methodunun içərisində for dövrü var və orda deyir ki, inputa daxil edilən rəqəmi sən rəqəmin özü qədər təkrarlayaraq rəqəmin özünü yazdır
         let addNumericTodos = () => {
             for (let i = 0; i < numericValue; i++) {
                 let numericTodos = $("<h2>").text(numericValue);
