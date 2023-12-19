@@ -81,7 +81,7 @@ $(document).ready(function () {
             $(".list").append(`<h2>${inputValue}</h2>`);
         } else {
             for (let i = 0; i < Number(inputValue); i++) {
-                $(".list").append(`<h2>${Number(inputValue)}</h2>`);
+                $(".list").append(`<h2>${}</h2>`);
             }
         }
 
