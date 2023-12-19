@@ -31,6 +31,7 @@
 
 
 
+
 // -----------------------------------------------------2-ci üsul-------------------------------------------------------------------------------
 
 // "use strict";
@@ -65,36 +66,53 @@
 
 
 
+
 // -----------------------------------------------------3-cü üsul-------------------------------------------------------------------------------
 
+// "use strict";
+// $(document).ready(function () {
+//     $(".btn").click(() => {
+//         // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
+//         let inputValue = $("input").val().trim();
+
+
+//         if (inputValue == "") {
+//             // alert("Zəhmət olmasa boş buraxmayın!");
+//             console.log("Zəhmət olmasa boş buraxmayın!");
+//         } else if (!Number(inputValue)) {
+//             $(".list").append(`<h2>${inputValue}</h2>`);
+//         } else {
+//             for (let i = 0; i < Number(inputValue); i++) {
+//                 $(".list").append(`<h2>${inputValue}</h2>`);
+//             }
+//         }
+
+
+//         // son olaraq inputun için təmizlə
+//         $("input").val("");
+
+//     });
+// });
+
+
+
+
+
+
+
+
+// -----------------------------------------------------4-cü üsul-------------------------------------------------------------------------------
 "use strict";
 $(document).ready(function () {
-    $(".btn").click(() => {
-        // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
-        let inputValue = $("input").val().trim();
-
-
-        if (inputValue == "") {
-            // alert("Zəhmət olmasa boş buraxmayın!");
-            console.log("Zəhmət olmasa boş buraxmayın!");
-        } else if (!Number(inputValue)) {
-            $(".list").append(`<h2>${inputValue}</h2>`);
-        } else {
-            for (let i = 0; i < Number(inputValue); i++) {
-                $(".list").append(`<h2>${inputValue}</h2>`);
+    $(".btn").click(function (e) {
+        e.preventDefault();
+        if (!$.trim($("input").val()) == "") {
+            let a = b => {
+                for (let i = 0; i < b; i++) { $(".list").append(`<h2>${b}</h2>`); }
             }
+            let v = f => Number(f) ? a(f) : $(".list").append(`<h2>${f}</h2>`);
+            v($("input").val());
         }
-
-
-        // son olaraq inputun için təmizlə
         $("input").val("");
-
-    });
+    })
 });
-
-
-
-
-
-
-
