@@ -35,7 +35,7 @@
 
 // "use strict";
 // $(document).ready(function () {
-//     $("button").click(() => {
+//     $(".btn").click(() => {
 //         // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
 //         let inputValue = $("input").val().trim();
 //         // inputun dəyərin numeric dəyərə çevir
@@ -44,12 +44,12 @@
 //         // burda bir addNumericTodos() methodunun içərisində for dövrü var və orda deyir ki, inputa daxil edilən rəqəmi sən rəqəmin özü qədər təkrarlayaraq rəqəmin özünü yazdır
 //         let addNumericTodos = () => {
 //             for (let i = 0; i < numericValue; i++) {
-//                 $(".list").append(`<h2>${numericValue}</h2>`);
+//                 $(".list").append(`<h2>${inputValue}</h2>`);
 //             }
 //         }
 
-//         // əgəg inputun dəyəri boşdursa onda "Zəhmət olmasa boş buraxmayın!" bu mesaj gəlsin yox əgər boş deyilsə həm də number deyilsə onda sən todu'nu string kimi əlavə et yox əgər rəqəmdirsə bu methodu yəni funksiyanı çalışdır ---> addNumericTodos()
-//         inputValue == "" ? alert("Zəhmət olmasa boş buraxmayın!") : !numericValue ? $(".list").append(`<h2>${inputValue}</h2>`) : addNumericTodos();
+//         // əgəg inputun dəyəri boşdursa onda "Zəhmət olmasa boş buraxmayın!" konsolda bu mesaj gəlsin yox əgər boş deyilsə həm də number deyilsə onda sən todu'nu string kimi əlavə et yox əgər rəqəmdirsə bu methodu yəni funksiyanı çalışdır ---> addNumericTodos()
+//         inputValue == "" ? console.log("Zəhmət olmasa boş buraxmayın!") : !numericValue ? $(".list").append(`<h2>${inputValue}</h2>`) : addNumericTodos();
 
 
 //         // son olaraq inputun için təmizlə
@@ -67,29 +67,29 @@
 
 // -----------------------------------------------------3-cü üsul-------------------------------------------------------------------------------
 
-"use strict";
-$(document).ready(function () {
-    $("button").click(() => {
-        // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
-        let inputValue = $("input").val().trim();
+// "use strict";
+// $(document).ready(function () {
+//     $(".btn").click(() => {
+//         // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
+//         let inputValue = $("input").val().trim();
 
 
-        if (inputValue == "") {
-            // alert("Zəhmət olmasa boş buraxmayın!");
-            console.log("Zəhmət olmasa boş buraxmayın!");
-        } else if (!Number(inputValue)) {
-            $(".list").append(`<h2>${inputValue}</h2>`);
-        } else {
-            for (let i = 0; i < Number(inputValue); i++) {
-                $(".list").append(`<h2>${}</h2>`);
-            }
-        }
+//         if (inputValue == "") {
+//             // alert("Zəhmət olmasa boş buraxmayın!");
+//             console.log("Zəhmət olmasa boş buraxmayın!");
+//         } else if (!Number(inputValue)) {
+//             $(".list").append(`<h2>${inputValue}</h2>`);
+//         } else {
+//             for (let i = 0; i < Number(inputValue); i++) {
+//                 $(".list").append(`<h2>${inputValue}</h2>`);
+//             }
+//         }
 
-        // son olaraq inputun için təmizlə
-        $("input").val("");
+//         // son olaraq inputun için təmizlə
+//         $("input").val("");
 
-    });
-});
+//     });
+// });
 
 
 

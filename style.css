@@ -31,10 +31,13 @@ a:hover {
   padding: 15px;
   border-radius: 20px;
 }
-#todo .btn button {
-  border: none;
+#todo .btn h5 {
+  background-color: white;
   border-radius: 20px;
   padding: 10px 25px;
+}
+#todo .btn h5:hover {
+  cursor: pointer;
 }
 #todo .list {
   padding: 30px 0;
