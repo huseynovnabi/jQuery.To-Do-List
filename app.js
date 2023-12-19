@@ -1,7 +1,7 @@
 // "use strict";
 //----------------------------------------------------1 - ci üsul-------------------------------------------------------------------------------
 // $(document).ready(function () {
-//     $("button").click(() => {
+//     $(".btn").click(() => {
 //         //inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
 //         let inputValue = $("input").val().trim();
 //         // inputun dəyərin numeric dəyərə çevir
@@ -16,7 +16,7 @@
 //         }
 
 //         //əgəg inputun dəyəri boşdursa onda "Zəhmət olmasa boş buraxmayın!" bu mesaj gəlsin yox əgər boş deyilsə həm də number deyilsə onda sən todu'nu string kimi əlavə et yox əgər rəqəmdirsə bu methodu yəni funksiyanı çalışdır ---> addNumericTodos()
-//         inputValue == "" ? alert("Zəhmət olmasa boş buraxmayın!") : !numericValue ? $(".list").append($("<h2>").html(inputValue)) : addNumericTodos();
+//         inputValue == "" ? console.log("Zəhmət olmasa boş buraxmayın!") : !numericValue ? $(".list").append($("<h2>").html(inputValue)) : addNumericTodos();
 
 
 //         //son olaraq inputun için təmizlə
@@ -67,29 +67,30 @@
 
 // -----------------------------------------------------3-cü üsul-------------------------------------------------------------------------------
 
-// "use strict";
-// $(document).ready(function () {
-//     $(".btn").click(() => {
-//         // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
-//         let inputValue = $("input").val().trim();
+"use strict";
+$(document).ready(function () {
+    $(".btn").click(() => {
+        // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
+        let inputValue = $("input").val().trim();
 
 
-//         if (inputValue == "") {
-//             // alert("Zəhmət olmasa boş buraxmayın!");
-//             console.log("Zəhmət olmasa boş buraxmayın!");
-//         } else if (!Number(inputValue)) {
-//             $(".list").append(`<h2>${inputValue}</h2>`);
-//         } else {
-//             for (let i = 0; i < Number(inputValue); i++) {
-//                 $(".list").append(`<h2>${inputValue}</h2>`);
-//             }
-//         }
+        if (inputValue == "") {
+            // alert("Zəhmət olmasa boş buraxmayın!");
+            console.log("Zəhmət olmasa boş buraxmayın!");
+        } else if (!Number(inputValue)) {
+            $(".list").append(`<h2>${inputValue}</h2>`);
+        } else {
+            for (let i = 0; i < Number(inputValue); i++) {
+                $(".list").append(`<h2>${inputValue}</h2>`);
+            }
+        }
 
-//         // son olaraq inputun için təmizlə
-//         $("input").val("");
 
-//     });
-// });
+        // son olaraq inputun için təmizlə
+        $("input").val("");
+
+    });
+});
 
 
 
