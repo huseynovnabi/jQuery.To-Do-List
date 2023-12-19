@@ -67,36 +67,6 @@
 
 // -----------------------------------------------------3-cü üsul-------------------------------------------------------------------------------
 
-// "use strict";
-// $(document).ready(function () {
-//     $("button").click(() => {
-//         // inputun daxilindəki dəyəri solu və sağı boşluqlardan (yəni trim()) təmizlənmiş halda al
-//         let inputValue = $("input").val().trim();
-
-
-//         if (inputValue == "") {
-//             alert("Zəhmət olmasa boş buraxmayın!");
-//         } else if (!Number(inputValue)) {
-//             $(".list").append(`<h2>${inputValue}</h2>`)
-//         } else {
-//             for (let i = 0; i < Number(inputValue); i++) {
-//                 $(".list").append(`<h2>${Number(inputValue)}</h2>`);
-//             }
-//         }
-
-//         // son olaraq inputun için təmizlə
-//         $("input").val("");
-
-//     });
-// });
-
-
-
-
-
-
-
-// -----------------------------------------------------4-cü üsul-------------------------------------------------------------------------------
 "use strict";
 $(document).ready(function () {
     $("button").click(() => {
@@ -106,12 +76,11 @@ $(document).ready(function () {
 
         if (inputValue == "") {
             alert("Zəhmət olmasa boş buraxmayın!");
-        } else if (String(inputValue)) {
-            $(".list").append(`<h2>${inputValue}</h2>`)
+        } else if (!Number(inputValue)) {
+            $(".list").append(`<h2>${inputValue}</h2>`);
         } else {
-            for (let i = 0; i < numberTodos; i++) {
-                numberTodos = Number(inputValue);
-                $(".list").append(`<h2>${numberTodos}</h2>`);
+            for (let i = 0; i < Number(inputValue); i++) {
+                $(".list").append(`<h2>${Number(inputValue)}</h2>`);
             }
         }
 
@@ -120,3 +89,10 @@ $(document).ready(function () {
 
     });
 });
+
+
+
+
+
+
+
