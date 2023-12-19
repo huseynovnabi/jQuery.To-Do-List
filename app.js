@@ -75,7 +75,8 @@ $(document).ready(function () {
 
 
         if (inputValue == "") {
-            alert("Zəhmət olmasa boş buraxmayın!");
+            // alert("Zəhmət olmasa boş buraxmayın!");
+            console.log("Zəhmət olmasa boş buraxmayın!");
         } else if (!Number(inputValue)) {
             $(".list").append(`<h2>${inputValue}</h2>`);
         } else {
